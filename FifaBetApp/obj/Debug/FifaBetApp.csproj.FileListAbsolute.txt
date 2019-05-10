@@ -1,0 +1,10 @@
+C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\bin\Debug\FifaBetApp.exe.config
+C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\bin\Debug\FifaBetApp.exe
+C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\bin\Debug\FifaBetApp.pdb
+C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.csprojAssemblyReference.cache
+C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.Form1.resources
+C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.Properties.Resources.resources
+C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.csproj.GenerateResource.cache
+C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.csproj.CoreCompileInputs.cache
+C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.exe
+C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.pdb
