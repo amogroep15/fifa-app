@@ -1,6 +1,6 @@
 ﻿namespace FifaBetApp
 {
-    partial class Form1
+    partial class gambleForm
     {
         /// <summary>
         /// Required designer variable.
@@ -40,6 +40,9 @@
             this.betButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.balanceLabel = new System.Windows.Forms.Label();
+            this.welcomeLabel = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // teamBox
@@ -140,26 +143,61 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(549, 12);
+            this.label4.Location = new System.Drawing.Point(557, 211);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 29);
+            this.label4.Size = new System.Drawing.Size(146, 29);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Saldo:";
+            this.label4.Text = "Je saldo is:";
             // 
             // balanceLabel
             // 
             this.balanceLabel.AutoSize = true;
             this.balanceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.balanceLabel.Location = new System.Drawing.Point(644, 13);
+            this.balanceLabel.Location = new System.Drawing.Point(595, 253);
             this.balanceLabel.Name = "balanceLabel";
-            this.balanceLabel.Size = new System.Drawing.Size(0, 32);
+            this.balanceLabel.Size = new System.Drawing.Size(83, 32);
             this.balanceLabel.TabIndex = 11;
+            this.balanceLabel.Text = "€697";
             // 
-            // Form1
+            // welcomeLabel
+            // 
+            this.welcomeLabel.AutoSize = true;
+            this.welcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcomeLabel.Location = new System.Drawing.Point(555, 13);
+            this.welcomeLabel.Name = "welcomeLabel";
+            this.welcomeLabel.Size = new System.Drawing.Size(146, 39);
+            this.welcomeLabel.TabIndex = 12;
+            this.welcomeLabel.Text = "Welkom";
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.ForeColor = System.Drawing.Color.Blue;
+            this.nameLabel.Location = new System.Drawing.Point(565, 67);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(88, 39);
+            this.nameLabel.TabIndex = 13;
+            this.nameLabel.Text = "Rick";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(742, 67);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 39);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "!";
+            // 
+            // gambleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.nameLabel);
+            this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.balanceLabel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.betButton);
@@ -172,8 +210,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.teamBox);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "gambleForm";
+            this.Text = "FIFA Bet App";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -194,6 +232,9 @@
         private System.Windows.Forms.Button betButton;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label balanceLabel;
+        private System.Windows.Forms.Label welcomeLabel;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Label label6;
     }
 }
 

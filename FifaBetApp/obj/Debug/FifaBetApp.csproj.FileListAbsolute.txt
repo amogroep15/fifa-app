@@ -8,3 +8,14 @@ C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.csproj.Ge
 C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.csproj.CoreCompileInputs.cache
 C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.exe
 C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.pdb
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\bin\Debug\FifaBetApp.exe.config
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\bin\Debug\FifaBetApp.exe
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\bin\Debug\FifaBetApp.pdb
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.csprojAssemblyReference.cache
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.checkForm.resources
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.Properties.Resources.resources
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.csproj.GenerateResource.cache
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.csproj.CoreCompileInputs.cache
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.exe
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.pdb
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.gambleForm.resources
