@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace FifaBetApp
 {
     public partial class Form1 : Form
@@ -87,7 +88,7 @@ namespace FifaBetApp
 
         private void plus1Button_Click(object sender, EventArgs e)
         {
-         int result = int.Parse(textBox1.Text);
+            int result = int.Parse(textBox1.Text);
             result = result + 1;
             textBox1.Text = result.ToString();
 
