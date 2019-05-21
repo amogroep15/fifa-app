@@ -20,7 +20,7 @@ namespace FifaBetApp
 
 
 
-    private void toAppButton_Click(object sender, EventArgs e)
+    public void toAppButton_Click(object sender, EventArgs e)
         {
             if (yesButton.Checked)
             {
