@@ -126,7 +126,7 @@ namespace FifaBetApp
         public void Form1_Load(object sender, EventArgs e)
         {
             nameLabel.Text = UserName;
-            balance = 100000;
+            balance = 10000;
             balanceLabel.Text = balance.ToString();
         }
 
