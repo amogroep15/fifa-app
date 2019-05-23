@@ -43,32 +43,35 @@
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.saveButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // teamBox
             // 
             this.teamBox.FormattingEnabled = true;
-            this.teamBox.ItemHeight = 16;
-            this.teamBox.Location = new System.Drawing.Point(13, 13);
+            this.teamBox.Location = new System.Drawing.Point(10, 11);
+            this.teamBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.teamBox.Name = "teamBox";
-            this.teamBox.Size = new System.Drawing.Size(233, 420);
+            this.teamBox.Size = new System.Drawing.Size(176, 342);
             this.teamBox.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(252, 13);
+            this.label1.Location = new System.Drawing.Point(189, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 29);
+            this.label1.Size = new System.Drawing.Size(53, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Wed";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(322, 19);
+            this.textBox1.Location = new System.Drawing.Point(242, 15);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(39, 22);
+            this.textBox1.Size = new System.Drawing.Size(30, 20);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "0";
             // 
@@ -76,9 +79,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(367, 13);
+            this.label2.Location = new System.Drawing.Point(275, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 29);
+            this.label2.Size = new System.Drawing.Size(53, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "euro";
             // 
@@ -86,25 +90,28 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(257, 109);
+            this.label3.Location = new System.Drawing.Point(193, 89);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 29);
+            this.label3.Size = new System.Drawing.Size(97, 24);
             this.label3.TabIndex = 4;
             this.label3.Text = "Op Team";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(386, 112);
+            this.comboBox1.Location = new System.Drawing.Point(290, 91);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(80, 24);
+            this.comboBox1.Size = new System.Drawing.Size(61, 21);
             this.comboBox1.TabIndex = 5;
             // 
             // plus1Button
             // 
-            this.plus1Button.Location = new System.Drawing.Point(257, 46);
+            this.plus1Button.Location = new System.Drawing.Point(193, 37);
+            this.plus1Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.plus1Button.Name = "plus1Button";
-            this.plus1Button.Size = new System.Drawing.Size(52, 49);
+            this.plus1Button.Size = new System.Drawing.Size(39, 40);
             this.plus1Button.TabIndex = 6;
             this.plus1Button.Text = "+1";
             this.plus1Button.UseVisualStyleBackColor = true;
@@ -112,9 +119,10 @@
             // 
             // plus5Button
             // 
-            this.plus5Button.Location = new System.Drawing.Point(335, 48);
+            this.plus5Button.Location = new System.Drawing.Point(251, 39);
+            this.plus5Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.plus5Button.Name = "plus5Button";
-            this.plus5Button.Size = new System.Drawing.Size(54, 47);
+            this.plus5Button.Size = new System.Drawing.Size(40, 38);
             this.plus5Button.TabIndex = 7;
             this.plus5Button.Text = "+5";
             this.plus5Button.UseVisualStyleBackColor = true;
@@ -122,9 +130,10 @@
             // 
             // plus10Button
             // 
-            this.plus10Button.Location = new System.Drawing.Point(410, 48);
+            this.plus10Button.Location = new System.Drawing.Point(308, 39);
+            this.plus10Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.plus10Button.Name = "plus10Button";
-            this.plus10Button.Size = new System.Drawing.Size(56, 47);
+            this.plus10Button.Size = new System.Drawing.Size(42, 38);
             this.plus10Button.TabIndex = 8;
             this.plus10Button.Text = "+10";
             this.plus10Button.UseVisualStyleBackColor = true;
@@ -132,9 +141,10 @@
             // 
             // betButton
             // 
-            this.betButton.Location = new System.Drawing.Point(296, 158);
+            this.betButton.Location = new System.Drawing.Point(222, 128);
+            this.betButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.betButton.Name = "betButton";
-            this.betButton.Size = new System.Drawing.Size(155, 82);
+            this.betButton.Size = new System.Drawing.Size(116, 67);
             this.betButton.TabIndex = 9;
             this.betButton.Text = "Plaats weddenschap!";
             this.betButton.UseVisualStyleBackColor = true;
@@ -143,9 +153,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(557, 211);
+            this.label4.Location = new System.Drawing.Point(418, 171);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 29);
+            this.label4.Size = new System.Drawing.Size(115, 24);
             this.label4.TabIndex = 10;
             this.label4.Text = "Je saldo is:";
             // 
@@ -153,18 +164,20 @@
             // 
             this.balanceLabel.AutoSize = true;
             this.balanceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.balanceLabel.Location = new System.Drawing.Point(595, 253);
+            this.balanceLabel.Location = new System.Drawing.Point(446, 206);
+            this.balanceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.balanceLabel.Name = "balanceLabel";
-            this.balanceLabel.Size = new System.Drawing.Size(0, 32);
+            this.balanceLabel.Size = new System.Drawing.Size(0, 26);
             this.balanceLabel.TabIndex = 11;
             // 
             // welcomeLabel
             // 
             this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLabel.Location = new System.Drawing.Point(555, 13);
+            this.welcomeLabel.Location = new System.Drawing.Point(416, 11);
+            this.welcomeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(141, 38);
+            this.welcomeLabel.Size = new System.Drawing.Size(117, 31);
             this.welcomeLabel.TabIndex = 12;
             this.welcomeLabel.Text = "Welkom";
             // 
@@ -173,26 +186,43 @@
             this.nameLabel.AutoSize = true;
             this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.ForeColor = System.Drawing.Color.Blue;
-            this.nameLabel.Location = new System.Drawing.Point(565, 67);
+            this.nameLabel.Location = new System.Drawing.Point(424, 54);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nameLabel.Name = "nameLabel";
+<<<<<<< Updated upstream
             this.nameLabel.Size = new System.Drawing.Size(0, 38);
+=======
+            this.nameLabel.Size = new System.Drawing.Size(72, 31);
+>>>>>>> Stashed changes
             this.nameLabel.TabIndex = 13;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(742, 67);
+            this.label6.Location = new System.Drawing.Point(556, 54);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 38);
+            this.label6.Size = new System.Drawing.Size(23, 31);
             this.label6.TabIndex = 14;
             this.label6.Text = "!";
             // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(504, 330);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 15;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
             // gambleForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.saveButton);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.welcomeLabel);
@@ -208,6 +238,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.teamBox);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "gambleForm";
             this.Text = "FIFA Bet App";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -233,6 +264,7 @@
         private System.Windows.Forms.Label welcomeLabel;
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button saveButton;
     }
 }
 

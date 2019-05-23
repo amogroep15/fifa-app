@@ -128,5 +128,10 @@ namespace FifaBetApp
             balance = 100000;
             balanceLabel.Text = balance.ToString();
         }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
