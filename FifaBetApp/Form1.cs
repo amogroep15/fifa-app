@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace FifaBetApp
 {
-    public partial class Form1 : Form
+    public partial class gambleForm : Form
     {
 
         decimal balance;
         List<string> teamNumbers = new List<string>();
         List<string> teamMembers = new List<string>();
 
-        public Form1()
+        public gambleForm()
         {
             InitializeComponent();
             teamNumbers.Add("Team 1");
@@ -110,7 +110,8 @@ namespace FifaBetApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            balance = 100000;
+            My.Forms.checkForm.namebox.Text = nameLabel.Text
+             balance = 100000;
             balanceLabel.Text = balance.ToString();
         }
     }

@@ -8,6 +8,7 @@ C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.csproj.Ge
 C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.csproj.CoreCompileInputs.cache
 C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.exe
 C:\Users\rickv\source\repos\FifaBetApp\FifaBetApp\obj\Debug\FifaBetApp.pdb
+<<<<<<< HEAD
 D:\Projecten\P4\SkillLab\gitOpdrachten\fifa-app\FifaBetApp\bin\Debug\FifaBetApp.exe.config
 D:\Projecten\P4\SkillLab\gitOpdrachten\fifa-app\FifaBetApp\bin\Debug\FifaBetApp.exe
 D:\Projecten\P4\SkillLab\gitOpdrachten\fifa-app\FifaBetApp\bin\Debug\FifaBetApp.pdb
@@ -18,3 +19,16 @@ D:\Projecten\P4\SkillLab\gitOpdrachten\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.
 D:\Projecten\P4\SkillLab\gitOpdrachten\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.csproj.CoreCompileInputs.cache
 D:\Projecten\P4\SkillLab\gitOpdrachten\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.exe
 D:\Projecten\P4\SkillLab\gitOpdrachten\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.pdb
+=======
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\bin\Debug\FifaBetApp.exe.config
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\bin\Debug\FifaBetApp.exe
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\bin\Debug\FifaBetApp.pdb
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.csprojAssemblyReference.cache
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.checkForm.resources
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.Properties.Resources.resources
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.csproj.GenerateResource.cache
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.csproj.CoreCompileInputs.cache
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.exe
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.pdb
+C:\Users\rickv\Documents\Radius\Project FIFA\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.gambleForm.resources
+>>>>>>> master
