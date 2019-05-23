@@ -12,13 +12,15 @@ namespace FifaBetApp
 {
     public partial class gambleForm : Form
     {
-
+        private string UserName { get; }
         decimal balance;
         List<string> teamNumbers = new List<string>();
         List<string> teamMembers = new List<string>();
 
-        public gambleForm()
+        public gambleForm(string userName)
         {
+            UserName = userName;
+
             InitializeComponent();
             teamNumbers.Add("Team 1");
             teamNumbers.Add("Team 2");
@@ -85,13 +87,13 @@ namespace FifaBetApp
             teamBox.DataSource = teamMembers;
 
            
-            if (balance <= 0)
-                MessageBox.Show("Je kan geen geld meer inzetten");
+          //  if (balance <= 0)
+            //    MessageBox.Show("Je kan geen geld meer inzetten");
 
-            else
+         //   else
 
-                MessageBox.Show("Je hebt genoeg geld")
-                ;
+             //   MessageBox.Show("Je hebt genoeg geld")
+             //   ;
                
      
            
@@ -107,7 +109,7 @@ namespace FifaBetApp
 
         private void plus5Button_Click(object sender, EventArgs e)
         {
-            int result = int.Parse(textBox1.Text);
+            int result = int.Parse(textBox1.Text);  
             result = result + 5;
             textBox1.Text = result.ToString();
         }
@@ -121,8 +123,8 @@ namespace FifaBetApp
 
         public void Form1_Load(object sender, EventArgs e)
         {
-          checkForm.nameBox.Text = nameLabel.Text;
-              balance = 100000;
+            nameLabel.Text = UserName;
+            balance = 100000;
             balanceLabel.Text = balance.ToString();
         }
     }

@@ -24,7 +24,7 @@ namespace FifaBetApp
         {
             if (yesButton.Checked)
             {
-                gambleForm Check = new gambleForm();
+                gambleForm Check = new gambleForm(nameBox.Text);
                 Check.Show();
                 Hide();
             }

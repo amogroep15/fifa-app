@@ -118,7 +118,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox nameBox;
+        public System.Windows.Forms.TextBox nameBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton yesButton;
         private System.Windows.Forms.RadioButton noButton;

@@ -175,9 +175,8 @@
             this.nameLabel.ForeColor = System.Drawing.Color.Blue;
             this.nameLabel.Location = new System.Drawing.Point(565, 67);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(86, 38);
+            this.nameLabel.Size = new System.Drawing.Size(0, 38);
             this.nameLabel.TabIndex = 13;
-            this.nameLabel.Text = "Rick";
             // 
             // label6
             // 
