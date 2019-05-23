@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 
 namespace FifaBetApp
@@ -131,7 +132,10 @@ namespace FifaBetApp
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-
+            string username = nameLabel.Text;
+            System.IO.StreamWriter file = new System.IO.StreamWriter("save.txt");
+            file.WriteLine(username);
+            file.Close();
         }
     }
 }

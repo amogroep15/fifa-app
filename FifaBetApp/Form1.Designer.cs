@@ -189,11 +189,8 @@
             this.nameLabel.Location = new System.Drawing.Point(424, 54);
             this.nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nameLabel.Name = "nameLabel";
-<<<<<<< Updated upstream
             this.nameLabel.Size = new System.Drawing.Size(0, 38);
-=======
             this.nameLabel.Size = new System.Drawing.Size(72, 31);
->>>>>>> Stashed changes
             this.nameLabel.TabIndex = 13;
             // 
             // label6

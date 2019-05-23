@@ -40,3 +40,9 @@ C:\Gitkraken\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.csproj.GenerateResource.ca
 C:\Gitkraken\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.csproj.CoreCompileInputs.cache
 C:\Gitkraken\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.exe
 C:\Gitkraken\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.pdb
+C:\Gitkraken\fifa-app\FifaBetApp\bin\Debug\FifaBetApp.exe.config
+C:\Gitkraken\fifa-app\FifaBetApp\bin\Debug\FifaBetApp.exe
+C:\Gitkraken\fifa-app\FifaBetApp\bin\Debug\FifaBetApp.pdb
+C:\Gitkraken\fifa-app\FifaBetApp\bin\Debug\Newtonsoft.Json.dll
+C:\Gitkraken\fifa-app\FifaBetApp\bin\Debug\Newtonsoft.Json.xml
+C:\Gitkraken\fifa-app\FifaBetApp\obj\Debug\FifaBetApp.csproj.CopyComplete
