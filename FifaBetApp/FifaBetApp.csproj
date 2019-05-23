@@ -60,13 +60,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="User.cs" />
-=======
     <EmbeddedResource Include="checkForm.resx">
       <DependentUpon>checkForm.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> master
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
