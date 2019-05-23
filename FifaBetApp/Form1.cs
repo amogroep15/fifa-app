@@ -84,6 +84,18 @@ namespace FifaBetApp
 
             comboBox1.DataSource = teamNumbers;
             teamBox.DataSource = teamMembers;
+
+           
+            if (balance <= 0)
+                MessageBox.Show("Je kan geen geld meer inzetten");
+
+            else
+
+                MessageBox.Show("Je hebt genoeg geld")
+                ;
+               
+     
+           
         }
 
         private void plus1Button_Click(object sender, EventArgs e)
@@ -108,10 +120,10 @@ namespace FifaBetApp
             textBox1.Text = result.ToString();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void Form1_Load(object sender, EventArgs e)
         {
-            My.Forms.checkForm.namebox.Text = nameLabel.Text
-             balance = 100000;
+          checkForm.nameBox.Text = nameLabel.Text;
+              balance = 100000;
             balanceLabel.Text = balance.ToString();
         }
     }

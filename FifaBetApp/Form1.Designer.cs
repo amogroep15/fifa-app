@@ -155,9 +155,8 @@
             this.balanceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.balanceLabel.Location = new System.Drawing.Point(595, 253);
             this.balanceLabel.Name = "balanceLabel";
-            this.balanceLabel.Size = new System.Drawing.Size(83, 32);
+            this.balanceLabel.Size = new System.Drawing.Size(0, 32);
             this.balanceLabel.TabIndex = 11;
-            this.balanceLabel.Text = "€697";
             // 
             // welcomeLabel
             // 
@@ -165,7 +164,7 @@
             this.welcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.welcomeLabel.Location = new System.Drawing.Point(555, 13);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(146, 39);
+            this.welcomeLabel.Size = new System.Drawing.Size(141, 38);
             this.welcomeLabel.TabIndex = 12;
             this.welcomeLabel.Text = "Welkom";
             // 
@@ -176,7 +175,7 @@
             this.nameLabel.ForeColor = System.Drawing.Color.Blue;
             this.nameLabel.Location = new System.Drawing.Point(565, 67);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(88, 39);
+            this.nameLabel.Size = new System.Drawing.Size(86, 38);
             this.nameLabel.TabIndex = 13;
             this.nameLabel.Text = "Rick";
             // 
@@ -186,7 +185,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(742, 67);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 39);
+            this.label6.Size = new System.Drawing.Size(27, 38);
             this.label6.TabIndex = 14;
             this.label6.Text = "!";
             // 
