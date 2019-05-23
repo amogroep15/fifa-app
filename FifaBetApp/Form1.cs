@@ -15,7 +15,7 @@ namespace FifaBetApp
     public partial class gambleForm : Form
     {
         private string UserName { get; }
-        decimal balance;
+        public static decimal balance;
         List<string> teamNumbers = new List<string>();
         List<string> teamMembers = new List<string>();
 
@@ -133,7 +133,7 @@ namespace FifaBetApp
         private void saveButton_Click(object sender, EventArgs e)
         {
             string username = nameLabel.Text;
-            System.IO.StreamWriter file = new System.IO.StreamWriter("save.txt");
+            System.IO.StreamWriter file = new System.IO.StreamWriter(".//test.txt");
             file.WriteLine(username);
             file.Close();
         }

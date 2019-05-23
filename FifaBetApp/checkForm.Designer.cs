@@ -40,36 +40,40 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(138, 126);
+            this.label1.Location = new System.Drawing.Point(104, 102);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 29);
+            this.label1.Size = new System.Drawing.Size(206, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Voer hier je naam in:";
             // 
             // nameBox
             // 
             this.nameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameBox.Location = new System.Drawing.Point(405, 128);
+            this.nameBox.Location = new System.Drawing.Point(304, 104);
+            this.nameBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(180, 27);
+            this.nameBox.Size = new System.Drawing.Size(136, 23);
             this.nameBox.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(138, 191);
+            this.label2.Location = new System.Drawing.Point(104, 155);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(216, 29);
+            this.label2.Size = new System.Drawing.Size(174, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "18 jaar en ouder?";
             // 
             // yesButton
             // 
             this.yesButton.AutoSize = true;
-            this.yesButton.Location = new System.Drawing.Point(399, 198);
+            this.yesButton.Location = new System.Drawing.Point(299, 161);
+            this.yesButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.yesButton.Name = "yesButton";
-            this.yesButton.Size = new System.Drawing.Size(44, 21);
+            this.yesButton.Size = new System.Drawing.Size(36, 17);
             this.yesButton.TabIndex = 3;
             this.yesButton.TabStop = true;
             this.yesButton.Text = "Ja";
@@ -78,9 +82,10 @@
             // noButton
             // 
             this.noButton.AutoSize = true;
-            this.noButton.Location = new System.Drawing.Point(498, 198);
+            this.noButton.Location = new System.Drawing.Point(374, 161);
+            this.noButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.noButton.Name = "noButton";
-            this.noButton.Size = new System.Drawing.Size(55, 21);
+            this.noButton.Size = new System.Drawing.Size(45, 17);
             this.noButton.TabIndex = 4;
             this.noButton.TabStop = true;
             this.noButton.Text = "Nee";
@@ -89,9 +94,10 @@
             // toAppButton
             // 
             this.toAppButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toAppButton.Location = new System.Drawing.Point(12, 329);
+            this.toAppButton.Location = new System.Drawing.Point(9, 267);
+            this.toAppButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.toAppButton.Name = "toAppButton";
-            this.toAppButton.Size = new System.Drawing.Size(776, 109);
+            this.toAppButton.Size = new System.Drawing.Size(582, 89);
             this.toAppButton.TabIndex = 5;
             this.toAppButton.Text = "Naar de app!";
             this.toAppButton.UseVisualStyleBackColor = true;
@@ -99,17 +105,19 @@
             // 
             // checkForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.toAppButton);
             this.Controls.Add(this.noButton);
             this.Controls.Add(this.yesButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.nameBox);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "checkForm";
             this.Text = "checkForm";
+            this.Load += new System.EventHandler(this.checkForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

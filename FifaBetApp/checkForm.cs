@@ -37,5 +37,10 @@ namespace FifaBetApp
            
     
         }
+
+        private void checkForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
