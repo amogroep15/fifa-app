@@ -132,10 +132,24 @@ namespace FifaBetApp
 
         private void saveButton_Click(object sender, EventArgs e)
         {
+
+            // Branches = JsonConvert.DeserializeObject<List<Branch>>(File.ReadAllText(@".\InformationTree.dat")); load
+            // File.WriteAllText(@".\InformationTree.dat", JsonConvert.SerializeObject(Branches)); save
+            // in form_load moet dit Program.InformationTree.LoadTree();
+            // opslaan Program.InformationTree.SaveTree();
+            // showInfoTree(Program.InformationTree, "");
+
             string username = nameLabel.Text;
-            System.IO.StreamWriter file = new System.IO.StreamWriter(".//test.txt");
-            file.WriteLine(username);
-            file.Close();
+
+       //     User = JsonConvert.DeserializeObject<User<UserName>>(File.ReadAllText(@".\InformationTree.dat"));
+
+        //    File.WriteAllText(@".\InformationTree.dat", JsonConvert.SerializeObject(Branches));
+
+          //  System.IO.StreamWriter file = new System.IO.StreamWriter(".//test.txt");
+
+            //file.WriteLine(username);
+
+            //file.Close();
         }
     }
 }
