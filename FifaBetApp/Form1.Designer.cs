@@ -49,10 +49,10 @@
             // teamBox
             // 
             this.teamBox.FormattingEnabled = true;
-            this.teamBox.Location = new System.Drawing.Point(10, 11);
-            this.teamBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.teamBox.Location = new System.Drawing.Point(10, 63);
+            this.teamBox.Margin = new System.Windows.Forms.Padding(2);
             this.teamBox.Name = "teamBox";
-            this.teamBox.Size = new System.Drawing.Size(176, 342);
+            this.teamBox.Size = new System.Drawing.Size(176, 290);
             this.teamBox.TabIndex = 0;
             // 
             // label1
@@ -69,7 +69,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(242, 15);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(30, 20);
             this.textBox1.TabIndex = 2;
@@ -90,26 +90,27 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(193, 89);
+            this.label3.Location = new System.Drawing.Point(217, 90);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 24);
+            this.label3.Size = new System.Drawing.Size(133, 24);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Op Team";
+            this.label3.Text = "Op wedstrijd:";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(290, 91);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Location = new System.Drawing.Point(197, 126);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(61, 21);
+            this.comboBox1.Size = new System.Drawing.Size(181, 21);
             this.comboBox1.TabIndex = 5;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // plus1Button
             // 
             this.plus1Button.Location = new System.Drawing.Point(193, 37);
-            this.plus1Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.plus1Button.Margin = new System.Windows.Forms.Padding(2);
             this.plus1Button.Name = "plus1Button";
             this.plus1Button.Size = new System.Drawing.Size(39, 40);
             this.plus1Button.TabIndex = 6;
@@ -120,7 +121,7 @@
             // plus5Button
             // 
             this.plus5Button.Location = new System.Drawing.Point(251, 39);
-            this.plus5Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.plus5Button.Margin = new System.Windows.Forms.Padding(2);
             this.plus5Button.Name = "plus5Button";
             this.plus5Button.Size = new System.Drawing.Size(40, 38);
             this.plus5Button.TabIndex = 7;
@@ -131,7 +132,7 @@
             // plus10Button
             // 
             this.plus10Button.Location = new System.Drawing.Point(308, 39);
-            this.plus10Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.plus10Button.Margin = new System.Windows.Forms.Padding(2);
             this.plus10Button.Name = "plus10Button";
             this.plus10Button.Size = new System.Drawing.Size(42, 38);
             this.plus10Button.TabIndex = 8;
@@ -141,30 +142,20 @@
             // 
             // betButton
             // 
-            this.betButton.Location = new System.Drawing.Point(222, 128);
-            this.betButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.betButton.Location = new System.Drawing.Point(193, 286);
+            this.betButton.Margin = new System.Windows.Forms.Padding(2);
             this.betButton.Name = "betButton";
             this.betButton.Size = new System.Drawing.Size(116, 67);
             this.betButton.TabIndex = 9;
             this.betButton.Text = "Plaats weddenschap!";
             this.betButton.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(418, 171);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 24);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Je saldo is:";
+            this.betButton.Click += new System.EventHandler(this.betButton_Click);
             // 
             // balanceLabel
             // 
             this.balanceLabel.AutoSize = true;
             this.balanceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.balanceLabel.Location = new System.Drawing.Point(446, 206);
+            this.balanceLabel.Location = new System.Drawing.Point(463, 245);
             this.balanceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.balanceLabel.Name = "balanceLabel";
             this.balanceLabel.Size = new System.Drawing.Size(0, 26);
@@ -189,8 +180,7 @@
             this.nameLabel.Location = new System.Drawing.Point(424, 54);
             this.nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(0, 38);
-            this.nameLabel.Size = new System.Drawing.Size(72, 31);
+            this.nameLabel.Size = new System.Drawing.Size(0, 31);
             this.nameLabel.TabIndex = 13;
             // 
             // label6
@@ -218,9 +208,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(557, 211);
+            this.label4.Location = new System.Drawing.Point(464, 206);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 29);
+            this.label4.Size = new System.Drawing.Size(115, 24);
             this.label4.TabIndex = 10;
             this.label4.Text = "Je saldo is:";
             // 
@@ -228,7 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(610, 375);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.nameLabel);
@@ -245,7 +236,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.teamBox);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "gambleForm";
             this.Text = "FIFA Bet App";
             this.Load += new System.EventHandler(this.Form1_Load);

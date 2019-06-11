@@ -16,79 +16,13 @@ namespace FifaBetApp
     {
         private string UserName { get; }
         public static decimal balance;
-        List<string> teamNumbers = new List<string>();
-        List<string> teamMembers = new List<string>();
 
         public gambleForm(string userName)
         {
             UserName = userName;
 
+
             InitializeComponent();
-            teamNumbers.Add("Team 1");
-            teamNumbers.Add("Team 2");
-            teamNumbers.Add("Team 3");
-            teamNumbers.Add("Team 4");
-
-            teamMembers.Add("-TEAM 1");
-            teamMembers.Add("Rick van Zelst");
-            teamMembers.Add("Kas Rasenberg");
-            teamMembers.Add("Daniel Vahabi");
-            teamMembers.Add("Hassan Hassan");
-            teamMembers.Add("Rick van Zelst");
-            teamMembers.Add("Kas Rasenberg");
-            teamMembers.Add("Daniel Vahabi");
-            teamMembers.Add("Hassan Hassan");
-            teamMembers.Add("Rick van Zelst");
-            teamMembers.Add("Kas Rasenberg");
-            teamMembers.Add("Daniel Vahabi");
-            teamMembers.Add("Hassan Hassan");
-
-            teamMembers.Add("-TEAM 2");
-            teamMembers.Add("Rick van Zelst");
-            teamMembers.Add("Kas Rasenberg");
-            teamMembers.Add("Daniel Vahabi");
-            teamMembers.Add("Hassan Hassan");
-            teamMembers.Add("Rick van Zelst");
-            teamMembers.Add("Kas Rasenberg");
-            teamMembers.Add("Daniel Vahabi");
-            teamMembers.Add("Hassan Hassan");
-            teamMembers.Add("Rick van Zelst");
-            teamMembers.Add("Kas Rasenberg");
-            teamMembers.Add("Daniel Vahabi");
-            teamMembers.Add("Hassan Hassan");
-
-            teamMembers.Add("-TEAM 3");
-            teamMembers.Add("Rick van Zelst");
-            teamMembers.Add("Kas Rasenberg");
-            teamMembers.Add("Daniel Vahabi");
-            teamMembers.Add("Hassan Hassan");
-            teamMembers.Add("Rick van Zelst");
-            teamMembers.Add("Kas Rasenberg");
-            teamMembers.Add("Daniel Vahabi");
-            teamMembers.Add("Hassan Hassan");
-            teamMembers.Add("Rick van Zelst");
-            teamMembers.Add("Kas Rasenberg");
-            teamMembers.Add("Daniel Vahabi");
-            teamMembers.Add("Hassan Hassan");
-
-            teamMembers.Add("-TEAM 4");
-            teamMembers.Add("Rick van Zelst");
-            teamMembers.Add("Kas Rasenberg");
-            teamMembers.Add("Daniel Vahabi");
-            teamMembers.Add("Hassan Hassan");
-            teamMembers.Add("Rick van Zelst");
-            teamMembers.Add("Kas Rasenberg");
-            teamMembers.Add("Daniel Vahabi");
-            teamMembers.Add("Hassan Hassan");
-            teamMembers.Add("Rick van Zelst");
-            teamMembers.Add("Kas Rasenberg");
-            teamMembers.Add("Daniel Vahabi");
-            teamMembers.Add("Hassan Hassan");
-
-            comboBox1.DataSource = teamNumbers;
-            teamBox.DataSource = teamMembers;
-
-           
           //  if (balance <= 0)
             //    MessageBox.Show("Je kan geen geld meer inzetten");
 
@@ -128,28 +62,98 @@ namespace FifaBetApp
             nameLabel.Text = UserName;
             balance = 10000;
             balanceLabel.Text = balance.ToString();
+
+            try
+            {
+                System.Net.WebClient downloader = new System.Net.WebClient();
+
+                string json;
+
+                json = downloader.DownloadString("http://kasrasenberg.com/index.php?request=teams&key=f6cdadf02b5521c26a7c09e2620d3bf3");
+
+                List<Team> teams = JsonConvert.DeserializeObject<List<Team>>(json);
+
+                foreach (Team team in teams)
+                {
+                    teamBox.Items.Add(team.name);
+                }
+
+                string matchJson;
+
+                matchJson = downloader.DownloadString("http://kasrasenberg.com/index.php?request=matches&key=aa3368d28f9a8dfb952d56c508d7cd3d");
+                List<Match> matches = JsonConvert.DeserializeObject<List<Match>>(matchJson);
+
+
+                for (int i = 0; i < matches.Count; i++)
+                {
+                    comboBox1.Items.Add(matches[i]);
+                }
+            }
+            catch (System.Net.WebException)
+            {
+                MessageBox.Show("Kan geen verbinding maken met de server!");
+            }
         }
 
         private void saveButton_Click(object sender, EventArgs e)
         {
 
-            // Branches = JsonConvert.DeserializeObject<List<Branch>>(File.ReadAllText(@".\InformationTree.dat")); load
-            // File.WriteAllText(@".\InformationTree.dat", JsonConvert.SerializeObject(Branches)); save
-            // in form_load moet dit Program.InformationTree.LoadTree();
-            // opslaan Program.InformationTree.SaveTree();
-            // showInfoTree(Program.InformationTree, "");
+        }
 
-            string username = nameLabel.Text;
+        private void betButton_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "")
+            {
+                MessageBox.Show("Selecteer een wedstrijd!");
 
-       //     User = JsonConvert.DeserializeObject<User<UserName>>(File.ReadAllText(@".\InformationTree.dat"));
+                return;
+            }
 
-        //    File.WriteAllText(@".\InformationTree.dat", JsonConvert.SerializeObject(Branches));
 
-          //  System.IO.StreamWriter file = new System.IO.StreamWriter(".//test.txt");
+            if (teamBox.SelectedItem != null)
+            {
+                try
+                {
+                    string team = teamBox.SelectedItem.ToString();
+                    Match match = (Match)comboBox1.SelectedItem;
+                    int betAmount = int.Parse(textBox1.Text);
 
-            //file.WriteLine(username);
 
-            //file.Close();
+                    if (betAmount < 1)
+                    {
+                        MessageBox.Show("Je moet minimaal 1 euro inzetten");
+
+                        return;
+                    }
+
+                    if (balance < betAmount)
+                    {
+                        MessageBox.Show("Je hebt niet genoeg geld!");
+
+                        return;
+                    }
+
+                    balance = balance - betAmount;
+                    balanceLabel.Text = balance.ToString();
+
+                    Bet newBet = new Bet(match, betAmount, team);
+
+                    MessageBox.Show(newBet.ToString());
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Voer een geldig geld bedrag in!");
+                }
+               
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            teamBox.Items.Clear();
+            Match match = (Match)comboBox1.SelectedItem;       
+            comboBox1.Items.Add(match.team1);
+            comboBox1.Items.Add(match.team2);
         }
     }
 }
